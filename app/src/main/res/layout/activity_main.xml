@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:background="#BBBDB5"
+    android:background="#b2dfdb"
     tools:context=".MainActivity">
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="130dp"
-        android:background="#0091EA"
+        android:background="#80cbc4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -33,7 +33,7 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="100px"
                 android:layout_marginBottom="10px"
-                android:background="#FF7043"
+                android:background="#82ada9"
                 android:text="C"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="@color/white" />
@@ -46,9 +46,10 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="100px"
                 android:layout_marginBottom="10px"
-                android:background="#1976D2"
+                android:background="#4f9b94"
                 android:text="&#8730;"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#EBF6F4F4" />
 
             <Button
                 android:id="@+id/button11"
@@ -58,9 +59,10 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="100px"
                 android:layout_marginBottom="10px"
-                android:background="#1976D2"
+                android:background="#4f9b94"
                 android:text="&#8260;"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#EBF6F4F4" />
 
             <Button
                 android:id="@+id/button12"
@@ -70,9 +72,10 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="100px"
                 android:layout_marginBottom="10px"
-                android:background="#1976D2"
+                android:background="#4f9b94"
                 android:text="%"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#EBF6F4F4" />
 
         </TableRow>
 
@@ -89,7 +92,7 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#42A5F5"
+                android:background="#b2fff7"
                 android:text="7"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -101,7 +104,7 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#42A5F5"
+                android:background="#b2fff7"
                 android:text="8"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -112,7 +115,7 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#42A5F5"
+                android:background="#b2fff7"
                 android:text="9"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -123,10 +126,11 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#1976D2"
+                android:background="#4f9b94"
                 android:onClick="onClickMultiplica"
                 android:text="x"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#EBF6F4F4" />
         </TableRow>
 
         <TableRow
@@ -141,7 +145,7 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#42A5F5"
+                android:background="#b2fff7"
                 android:text="4"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -152,7 +156,7 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#42A5F5"
+                android:background="#b2fff7"
                 android:text="5"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -163,7 +167,7 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#42A5F5"
+                android:background="#b2fff7"
                 android:text="6"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -175,10 +179,11 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#1976D2"
+                android:background="#4f9b94"
                 android:onClick="onClickResta"
                 android:text="&#8722;"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#EBF6F4F4" />
         </TableRow>
 
         <TableRow
@@ -195,7 +200,7 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#42A5F5"
+                android:background="#b2fff7"
                 android:text="1"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -206,7 +211,7 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#42A5F5"
+                android:background="#b2fff7"
                 android:text="2"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -217,7 +222,7 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#42A5F5"
+                android:background="#b2fff7"
                 android:text="3"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -229,9 +234,10 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#1976D2"
+                android:background="#4f9b94"
                 android:text="+"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#EBF6F4F4" />
         </TableRow>
 
         <TableRow
@@ -246,7 +252,7 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#42A5F5"
+                android:background="#b2fff7"
                 android:text="0"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -257,7 +263,7 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#42A5F5"
+                android:background="#b2fff7"
                 android:text="."
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -268,9 +274,10 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#1976D2"
+                android:background="#4f9b94"
                 android:text="="
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#EBF6F4F4" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
@@ -279,9 +286,10 @@
                 android:layout_marginLeft="30px"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:background="#1976D2"
+                android:background="#4f9b94"
                 android:text="x&#696;"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#EBF6F4F4" />
         </TableRow>
 
         <TableRow
@@ -297,10 +305,10 @@
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
                 android:layout_span="2"
-                android:background="#1976D2"
+                android:background="#4f9b94"
                 android:text="Área del círculo"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="@color/white" />
+                android:textColor="#EBFFFFFF" />
 
             <Button
                 style="?android:attr/buttonBarButtonStyle"
@@ -310,10 +318,10 @@
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
                 android:layout_span="2"
-                android:background="#1976D2"
+                android:background="#4f9b94"
                 android:text="Long. Circunferencia"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="@color/white" />
+                android:textColor="#EBFFFFFF" />
         </TableRow>
 
     </TableLayout>
@@ -338,7 +346,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.47" />
-
 
 
 </android.support.constraint.ConstraintLayout>
