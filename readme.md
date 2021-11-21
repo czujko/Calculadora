@@ -8,6 +8,6 @@ Programa __Calculadora__ desarrollado en Android Studio con las siguientes funci
 >- Raíz cuadrada
 >- Cálculo del área de un círculo
 >- Cálculo longitud de una circunferencia
-## Samples
+## Sample
 
 ![](sampledata/01.png)
