@@ -167,9 +167,9 @@ public class MainActivity extends AppCompatActivity {
     public void onClickBtnRaiz(View view) {
         String operacion = display.getText().toString();
         double resultado = Math.sqrt(Double.parseDouble(operacion));
-        String ultimoResultado= Double.toString(resultado);
-        display.setText(ultimoResultado);
-        display.setSelection(ultimoResultado.length());
+        resultado = Math.round(resultado*100.0)/100.0;
+        display.setText(String.valueOf(resultado));
+        display.setSelection(String.valueOf(resultado).length());
     }
 
     public void onClickBtnArea(View view) {

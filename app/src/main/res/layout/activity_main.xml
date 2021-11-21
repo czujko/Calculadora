@@ -64,9 +64,9 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_margin="5dp"
-                android:background="#4f9b94"
+                android:layout_weight="1"
+                android:background="#82ada9"
                 android:onClick="onClickBackspace"
                 android:text="@string/retroceso"
                 app:layout_constraintBottom_toTopOf="@+id/tableLayout"
@@ -74,7 +74,8 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/input"
-                app:srcCompat="@drawable/backspace" />
+                app:srcCompat="@drawable/backspace"
+                tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
         </TableRow>
 
@@ -253,12 +254,13 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="#b2fff7"
                 android:onClick="onClickBtnCero"
                 android:text="@string/cero"
-                android:layout_margin="5dp"
-                android:textSize="25sp"/>
+                android:textSize="25sp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
             <Button
                 android:id="@+id/btnPunto"
@@ -278,7 +280,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#4f9b94"
+                android:background="#82ada9"
                 android:onClick="onClickBtnIgual"
                 android:text="@string/igual"
                 android:layout_margin="5dp"
