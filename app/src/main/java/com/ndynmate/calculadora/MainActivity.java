@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.SpannableStringBuilder;
 import android.view.View;
 import android.widget.EditText;
+
 import org.mariuszgromada.math.*;
 import org.mariuszgromada.math.mxparser.Expression;
 
@@ -92,11 +93,11 @@ public class MainActivity extends AppCompatActivity {
     public void onClickBackspace(View view) {
         int posicionCursor = display.getSelectionStart();
         int textoLength = display.getText().length();
-        if(posicionCursor != 0 && textoLength != 0) {
+        if (posicionCursor != 0 && textoLength != 0) {
             SpannableStringBuilder select = (SpannableStringBuilder) display.getText();
-            select.replace(posicionCursor-1,posicionCursor,"" );
+            select.replace(posicionCursor - 1, posicionCursor, "");
             display.setText(select);
-            display.setSelection(posicionCursor-1);
+            display.setSelection(posicionCursor - 1);
         }
     }
 
@@ -111,22 +112,21 @@ public class MainActivity extends AppCompatActivity {
         int textoLength = display.getText().length();
 
         for (int i = 0; i < cursorPosicion; i++) {
-            if (display.getText().toString().substring(i,i+1).equals("(")) {
-                abreParent +=1;
+            if (display.getText().toString().substring(i, i + 1).equals("(")) {
+                abreParent += 1;
             }
-            if (display.getText().toString().substring(i,i+1).equals(")")) {
-                cierraParent +=1;
+            if (display.getText().toString().substring(i, i + 1).equals(")")) {
+                cierraParent += 1;
             }
         }
 
-        if (abreParent == cierraParent || display.getText().toString().substring(textoLength-1,textoLength).equals("(")) {
+        if (abreParent == cierraParent || display.getText().toString().substring(textoLength - 1, textoLength).equals("(")) {
             actualizaDisplay("(");
-        }
-        else if (cierraParent < abreParent && !display.getText().toString().substring(textoLength-1,textoLength).equals("(")) {
+        } else if (cierraParent < abreParent && !display.getText().toString().substring(textoLength - 1, textoLength).equals("(")) {
             actualizaDisplay(")");
         }
 
-        display.setSelection(cursorPosicion +1);
+        display.setSelection(cursorPosicion + 1);
 
     }
 
@@ -136,8 +136,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickBtnIgual(View view) {
         String operacion = display.getText().toString();
-        //operacion = operacion.replaceAll("^", "*")
-
         Expression math = new Expression(operacion);
         String resultado = String.valueOf(math.calculate());
         display.setText(resultado);
@@ -167,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickBtnRaiz(View view) {
         String operacion = display.getText().toString();
         double resultado = Math.sqrt(Double.parseDouble(operacion));
-        resultado = Math.round(resultado*100.0)/100.0;
+        resultado = Math.round(resultado * 100.0) / 100.0;
         display.setText(String.valueOf(resultado));
         display.setSelection(String.valueOf(resultado).length());
     }
@@ -175,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickBtnArea(View view) {
         Double radio = Double.parseDouble(display.getText().toString());
         double area = Math.PI * Math.pow(radio, 2);
-        area = Math.round(area*100.0)/100.0;
+        area = Math.round(area * 100.0) / 100.0;
         display.setText(String.valueOf(area));
         display.setSelection(String.valueOf(area).length());
     }
@@ -183,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickBtnLongitud(View view) {
         Double radio = Double.parseDouble(display.getText().toString());
         double diametro = 2 * Math.PI * radio;
-        diametro = Math.round(diametro*100.0)/100.0;
+        diametro = Math.round(diametro * 100.0) / 100.0;
         display.setText(String.valueOf(diametro));
         display.setSelection(String.valueOf(diametro).length());
     }
