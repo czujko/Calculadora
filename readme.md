@@ -6,8 +6,8 @@ Calculadora en Android Studio que realiza las siguientes funciones:
 4. División
 5. Potencia
 6. Raiz cuadrada
-7. Calculo del área de un circulo
-8. Calculo longitud de una circunferencia
+7. Cálculo del área de un círculo
+8. Cálculo longitud de una circunferencia
 ## Samples
 
 ![](sampledata/01.png)
