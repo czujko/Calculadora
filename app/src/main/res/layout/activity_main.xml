@@ -2,7 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#b2dfdb"
     tools:context=".MainActivity">
@@ -10,72 +10,71 @@
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="130dp"
+        android:layout_height="wrap_content"
         android:background="#80cbc4"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/input"
+        app:layout_constraintVertical_bias="0.95"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp">
 
         <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:visibility="visible">
 
             <Button
-                android:id="@+id/button14"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="100px"
-                android:layout_marginBottom="10px"
+                android:id="@+id/btnClear"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
                 android:background="#82ada9"
-                android:text="C"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="@color/white" />
+                android:onClick="onClickClear"
+                android:text="@string/borra"
+                android:textSize="25sp" />
 
             <Button
-                android:id="@+id/button13"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="100px"
-                android:layout_marginBottom="10px"
+                android:id="@+id/btnPorCiento"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#4f9b94"
-                android:text="&#8730;"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="#EBF6F4F4" />
+                android:onClick="onClickPorcentaje"
+                android:text="@string/porciento"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
 
             <Button
-                android:id="@+id/button11"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="100px"
-                android:layout_marginBottom="10px"
+                android:id="@+id/btnParentesis"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#4f9b94"
-                android:text="&#8260;"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="#EBF6F4F4" />
+                android:onClick="onClickParentesis"
+                android:text="@string/parentesis"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
 
-            <Button
-                android:id="@+id/button12"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="100px"
-                android:layout_marginBottom="10px"
+            <ImageButton
+                android:id="@+id/btnBackspace"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
                 android:background="#4f9b94"
-                android:text="%"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="#EBF6F4F4" />
+                android:onClick="onClickBackspace"
+                android:text="@string/retroceso"
+                app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input"
+                app:srcCompat="@drawable/backspace" />
 
         </TableRow>
 
@@ -85,52 +84,53 @@
             android:visibility="visible">
 
             <Button
-                android:id="@+id/button7"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
+                android:id="@+id/btn7"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#b2fff7"
-                android:text="7"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:onClick="onClickBtnSiete"
+                android:text="@string/siete"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
 
             <Button
-                android:id="@+id/button8"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
+                android:id="@+id/btn8"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#b2fff7"
-                android:text="8"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:onClick="onClickBtnOcho"
+                android:text="@string/ocho"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
 
             <Button
-                android:id="@+id/button9"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
+                android:id="@+id/btn9"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#b2fff7"
-                android:text="9"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:onClick="onClickBtnNueve"
+                android:text="@string/nueve"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
 
             <Button
-                android:id="@+id/buttonPlus"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
+                android:id="@+id/btnMultiplica"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#4f9b94"
                 android:onClick="onClickMultiplica"
-                android:text="x"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="#EBF6F4F4" />
+                android:text="@string/multiplica"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
+
         </TableRow>
 
         <TableRow
@@ -139,105 +139,53 @@
             android:visibility="visible">
 
             <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
+                android:id="@+id/btn4"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#b2fff7"
-                android:text="4"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:onClick="onClickBtnCuatro"
+                android:text="@string/cuatro"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
 
             <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
+                android:id="@+id/btn5"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#b2fff7"
-                android:text="5"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:onClick="onClickBtnCinco"
+                android:text="@string/cinco"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
 
             <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
+                android:id="@+id/btn6"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#b2fff7"
-                android:text="6"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:onClick="onClickBtnSeis"
+                android:text="@string/seis"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
 
             <Button
 
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
+                android:id="@+id/btnResta"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#4f9b94"
                 android:onClick="onClickResta"
-                android:text="&#8722;"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="#EBF6F4F4" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            android:layout_width="match_parent"
-            android:layout_height="260px"
-            android:visibility="visible">
-
-            <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
-                android:background="#b2fff7"
-                android:text="1"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
-
-            <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
-                android:background="#b2fff7"
-                android:text="2"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
-
-            <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
-                android:background="#b2fff7"
-                android:text="3"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
-
-            <Button
-
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
-                android:background="#4f9b94"
-                android:text="+"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="#EBF6F4F4" />
+                android:text="@string/resta"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
         </TableRow>
 
         <TableRow
@@ -246,50 +194,53 @@
             android:visibility="visible">
 
             <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
+                android:id="@+id/btn1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#b2fff7"
-                android:text="0"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:onClick="onClickBtnUno"
+                android:text="@string/uno"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
 
             <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
+                android:id="@+id/btn2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#b2fff7"
-                android:text="."
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:onClick="onClickBtnDos"
+                android:text="@string/dos"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
 
             <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
-                android:background="#4f9b94"
-                android:text="="
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="#EBF6F4F4" />
+                android:id="@+id/btn3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#b2fff7"
+                android:onClick="onClickBtnTres"
+                android:text="@string/tres"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
 
             <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="230px"
-                android:layout_height="200px"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
+
+                android:id="@+id/btnSuma"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#4f9b94"
-                android:text="x&#696;"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="#EBF6F4F4" />
+                android:onClick="onClickBtnSuma"
+                android:text="@string/suma"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
         </TableRow>
 
         <TableRow
@@ -298,54 +249,132 @@
             android:visibility="visible">
 
             <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
-                android:layout_span="2"
-                android:background="#4f9b94"
-                android:text="Área del círculo"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="#EBFFFFFF" />
+                android:id="@+id/btn0"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#b2fff7"
+                android:onClick="onClickBtnCero"
+                android:text="@string/cero"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
 
             <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="10px"
-                android:layout_marginBottom="10px"
-                android:layout_span="2"
+                android:id="@+id/btnPunto"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#b2fff7"
+                android:onClick="onClickBtnPunto"
+                android:text="@string/decimal"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/btnIgual"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="#4f9b94"
-                android:text="Long. Circunferencia"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textColor="#EBFFFFFF" />
+                android:onClick="onClickBtnIgual"
+                android:text="@string/igual"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/btnDivide"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClickBtnDivide"
+                android:background="#4f9b94"
+                android:text="@string/divide"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+
+            <Button
+                android:id="@+id/btnExponente"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4f9b94"
+                android:onClick="onClickBtnExponente"
+                android:text="@string/exponente"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/btnRCuadrada"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4f9b94"
+                android:onClick="onClickBtnRaiz"
+                android:text="@string/rCuadrada"
+                android:layout_margin="5dp"
+                android:textSize="25sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btnArea"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4f9b94"
+                android:onClick="onClickBtnArea"
+                android:text="@string/area"
+                android:layout_margin="5dp"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/btnLongitud"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4f9b94"
+                android:onClick="onClickBtnLongitud"
+                android:text="@string/longitud"
+                android:layout_margin="5dp"
+                android:textSize="12sp"/>
         </TableRow>
 
     </TableLayout>
 
     <EditText
-        android:id="@+id/editDecimalNumber"
-        android:layout_width="389dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:gravity="right"
-        android:hint="0"
-        android:inputType="number"
-        android:singleLine="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textSize="80dp"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/display"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
+        android:autofillHints="false"
+        android:textSize="36sp"
+        android:textAlignment="textEnd"
+        android:inputType="none"/>
+
+
 
 
 </android.support.constraint.ConstraintLayout>
