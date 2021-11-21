@@ -1,5 +1,5 @@
 # Calculadora
-Calculadora en Android Studio que realiza las siguientes funciones:
+Calculadora en Android Studio que realiza las siguientes funciones:\n
 1.Suma
 2.Resta
 3.Multiplicación
