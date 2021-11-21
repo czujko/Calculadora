@@ -1,5 +1,5 @@
 # Calculadora
-Programa __Calculadora__ desarrollado con Android Studio con las siguientes funciones:
+Programa __Calculadora__ desarrollado en Android Studio con las siguientes funciones:
 >- Suma
 >- Resta
 >- Multiplicación
